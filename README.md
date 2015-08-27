@@ -23,11 +23,25 @@ C:\Windows\Microsoft.NET\Framework\v2.0.50727>regasm c:\cells\Aspose.Cells.Inter
 In IIS open PHP Manager and then Click ‘Enable to Disable and Extension‘. Find php_com_dotnet.dll and make sure it is enabled.
 
 #### 3. Configure Aspose.Cells Java for PHP Examples
+##### Method 1
 * Clone the Repository
 ```
 git clone git@github.com:asposemarketplace/Aspose_Cells_Net_for_PHP.git
 ```
 * Setup the project using composer
+```
+composer install
+```
+##### Mothod 2
+* In your PHP Project's composer.json file add following lines
+```
+{
+    "require": {
+        "asposecells/aspose_cells_net_for_php": "dev-master"
+    }
+}
+```
+and run the install command
 ```
 composer install
 ```
